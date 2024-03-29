@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -51,6 +52,16 @@ public class DashboardActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        TextView drconsult = findViewById(R.id.consultPage);
+        drconsult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to SignupActivity when TextView is clicked
+                Intent intent = new Intent(DashboardActivity.this, consultActivity.class);
+                startActivity(intent);
+            }
         });
 
         Button resbutton = findViewById(R.id.submitbtn);

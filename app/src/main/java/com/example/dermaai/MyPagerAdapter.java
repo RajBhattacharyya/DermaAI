@@ -18,9 +18,9 @@ public class MyPagerAdapter extends FragmentStatePagerAdapter {
             "Dr. SK Khan"
     };
     private String[] details = {
-            "\uD83D\uDCCC MBBS, FRCS London\n\n\uD83D\uDCDE Phone-9632587410\n\n\uD83D\uDCCD Location-BK Block, Salt Lake",
+            "\uD83D\uDCCC MBBS, FRCS London\n\n\uD83D\uDCDE Phone-9632587410\n\n\uD83D\uDCCD Location-BK Block, Delhi",
             "\uD83D\uDCCC MBBS, Orthopaedics Spl\n\n\uD83D\uDCDE Phone-1236589740\n\n\uD83D\uDCCD Location-Maniktala Kolkata",
-            "\uD83D\uDCCC MBBS, Dermatologist\n\n\uD83D\uDCDE Phone-6985231470\n\n\uD83D\uDCCD Location-Sovabazar, Kolkata"
+            "\uD83D\uDCCC MBBS, Dermatologist\n\n\uD83D\uDCDE Phone-6985231470\n\n\uD83D\uDCCD Location-Sovabazar, Chennai"
     };
 
     public MyPagerAdapter(@NonNull FragmentManager fm) {
