@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="2sp">
+    <!-- fragment_my.xml -->
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="164dp"
+        android:layout_height="32dp"
+        android:text="Dr. SK Sharma"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageViewContent"
+        android:layout_width="187dp"
+        android:layout_height="195dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/dr1"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="168dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/inventory_box"
+        android:fontFamily="@font/dm_sans"
+        android:padding="18dp"
+        android:text="MBBS, Doctor of Medicine\nPh no.-6547821390\nLocation-BA \nSalt Lake, Kol-700064"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="357dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
