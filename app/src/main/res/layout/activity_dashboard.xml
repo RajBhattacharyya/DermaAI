@@ -11,162 +11,187 @@
         android:id="@+id/imageView"
         android:layout_width="121dp"
         android:layout_height="113dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/camera"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/output"
-        android:layout_width="342dp"
-        android:layout_height="215dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitbtn" />
-
-    <TextView
         android:id="@+id/imageupHead"
-        android:layout_width="125dp"
-        android:layout_height="29dp"
-        android:text="Your skin image"
+        android:layout_width="142dp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Scan your skin"
+        android:textColor="#27115C"
+        android:textSize="24.5sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/ageHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="38dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Age"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
 
     <EditText
         android:id="@+id/ageInp"
-        android:layout_width="79dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="-340dp"
+        android:layout_marginEnd="10dp"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/sexHead"
+        app:layout_constraintTop_toBottomOf="@+id/sexInp" />
+
+    <TextView
+        android:id="@+id/sexHead"
+        android:layout_width="32dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Sex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageHead" />
+
+    <EditText
+        android:id="@+id/sexInp"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toEndOf="@+id/ageHead"
         app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
 
     <TextView
-        android:id="@+id/sexHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Sex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toEndOf="@+id/ageInp"
-        app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
-
-    <EditText
-        android:id="@+id/sexInp"
-        android:layout_width="128dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sexHead"
-        app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
-
-    <TextView
         android:id="@+id/durationHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="375dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Duration"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageHead" />
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/sexInp"
+        app:layout_constraintTop_toBottomOf="@+id/uploadbtn"
+        app:layout_constraintVertical_bias="0.476" />
 
     <TextView
         android:id="@+id/medHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Any medical History"
+        android:layout_width="123dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="270dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Medical History"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/durationHead" />
+        app:layout_constraintTop_toBottomOf="@+id/sexHead" />
 
     <EditText
         android:id="@+id/durInp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="380dp"
         android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toEndOf="@+id/durationHead"
-        app:layout_constraintTop_toBottomOf="@+id/ageHead" />
+        app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
 
     <EditText
         android:id="@+id/medInp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="211dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toEndOf="@+id/medHead"
         app:layout_constraintTop_toBottomOf="@+id/durInp" />
 
     <Button
         android:id="@+id/uploadbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="14dp"
         android:text="click to upload image"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageupHead" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Submit"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#BF9D9D"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/symInp" />
+        app:layout_constraintTop_toBottomOf="@+id/symInp"
+        app:layout_constraintVertical_bias="0.471" />
 
     <TextView
         android:id="@+id/symHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="71dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="220dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Symtoms"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/medHead" />
 
     <EditText
         android:id="@+id/symInp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="241dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="220dp"
         android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toEndOf="@+id/symHead"
         app:layout_constraintTop_toBottomOf="@+id/medInp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="17dp"
+        android:text=" Upload an image and enter all the details for an accurate response "
+        android:textColor="#04000C"
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toEndOf="@+id/imageupHead"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
 </androidx.constraintlayout.widget.ConstraintLayout>
