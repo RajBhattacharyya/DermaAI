@@ -15,7 +15,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -55,8 +54,8 @@ public class DashboardActivity extends AppCompatActivity {
         });
 
         Button resbutton = findViewById(R.id.submitbtn);
-        EditText age = findViewById(R.id.ageInp);
-        EditText sex = findViewById(R.id.sexInp);
+        EditText age = findViewById(R.id.sexInp);
+        EditText sex = findViewById(R.id.ageInp);
         EditText duration = findViewById(R.id.durInp);
         EditText med = findViewById(R.id.medInp);
         EditText sym = findViewById(R.id.symInp);
