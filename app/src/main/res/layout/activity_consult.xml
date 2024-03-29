@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:background="@drawable/appointment"
+        android:background="@drawable/inventory_box"
         android:text="Book an Appointment"
         android:textColor="#000000"
         android:textSize="16sp"
