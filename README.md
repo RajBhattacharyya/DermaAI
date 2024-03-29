@@ -1,4 +1,4 @@
-# derma.AI
+# Derma.AI 🧪💉🩺
 
 Welcome to derma.AI, a revolutionary application designed to assist users in identifying skin diseases using artificial intelligence technology. 
 
