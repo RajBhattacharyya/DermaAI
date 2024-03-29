@@ -28,28 +28,8 @@ public class ResponseActivity extends AppCompatActivity {
         });
 
         TextView textView = findViewById(R.id.responseText);
-        SpannableStringBuilder textStringBuilder = new SpannableStringBuilder(getResources().getString(R.string.lorem_ipsum));
-
-
-        ValueAnimator animator = ValueAnimator.ofInt(0, textStringBuilder.length());
-        animator.setDuration(1000); // Adjust duration as desired (in milliseconds)
-
-        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                int charCount = (int) animation.getAnimatedValue();
-                // Ensure deletion stays within bounds
-                int deleteEnd = Math.min(charCount, textStringBuilder.length());
-                textStringBuilder.delete(0, deleteEnd);
-                textStringBuilder.append((char) charCount);
-                textView.setText(textStringBuilder);
-            }
-        });
-
-
-        animator.start();
-
-
+        String apiResponse = getIntent().getStringExtra("apiResponse");
+        textView.setText(apiResponse);
 
         Button consultBtn = findViewById(R.id.DrBtn);
         consultBtn.setOnClickListener(new View.OnClickListener() {

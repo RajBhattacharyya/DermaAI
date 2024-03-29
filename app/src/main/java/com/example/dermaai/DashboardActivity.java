@@ -88,7 +88,7 @@ public class DashboardActivity extends AppCompatActivity {
                 if (userAge.isEmpty() || userSex.isEmpty() || userDur.isEmpty() || userMed.isEmpty() || userSym.isEmpty()) {
                     Toast.makeText(DashboardActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(DashboardActivity.this, "Operation Successful!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DashboardActivity.this, "Please Wait!", Toast.LENGTH_SHORT).show();
                     displayRes(userAge,userSex,userDur,userMed, userSym,imageBitmap);
                     age.setText("");
                     sex.setText("");
@@ -122,7 +122,9 @@ public class DashboardActivity extends AppCompatActivity {
                 TextView restext = findViewById(R.id.output);
                 String resultText = result.getText();
                 Log.d("YourTag", resultText);
-                restext.setText(resultText);
+                Intent intent = new Intent(DashboardActivity.this, ResponseActivity.class);
+                intent.putExtra("apiResponse", resultText);
+                startActivity(intent);
             }
 
             @Override
