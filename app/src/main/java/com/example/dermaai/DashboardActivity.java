@@ -119,7 +119,6 @@ public class DashboardActivity extends AppCompatActivity {
         Futures.addCallback(response, new FutureCallback<GenerateContentResponse>() {
             @Override
             public void onSuccess(GenerateContentResponse result) {
-                TextView restext = findViewById(R.id.output);
                 String resultText = result.getText();
                 Log.d("YourTag", resultText);
                 Intent intent = new Intent(DashboardActivity.this, ResponseActivity.class);

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dashbg"
     tools:context=".DashboardActivity">
 
     <ImageView
@@ -39,6 +40,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Age"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,12 +50,12 @@
         android:id="@+id/ageInp"
         android:layout_width="54dp"
         android:layout_height="32dp"
-        android:layout_marginTop="-340dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toEndOf="@+id/sexHead"
         app:layout_constraintTop_toBottomOf="@+id/sexInp" />
 
@@ -64,6 +66,7 @@
         android:layout_marginTop="29dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Sex"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +79,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="35dp"
         android:ems="10"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toEndOf="@+id/ageHead"
@@ -85,26 +89,25 @@
         android:id="@+id/durationHead"
         android:layout_width="69dp"
         android:layout_height="27dp"
-        android:layout_marginBottom="375dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Duration"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toEndOf="@+id/sexInp"
-        app:layout_constraintTop_toBottomOf="@+id/uploadbtn"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
 
     <TextView
         android:id="@+id/medHead"
         android:layout_width="123dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="270dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Medical History"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sexHead" />
 
@@ -112,10 +115,11 @@
         android:id="@+id/durInp"
         android:layout_width="55dp"
         android:layout_height="32dp"
-        android:layout_marginBottom="380dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toEndOf="@+id/durationHead"
         app:layout_constraintTop_toBottomOf="@+id/uploadbtn" />
 
@@ -125,6 +129,7 @@
         android:layout_height="28dp"
         android:layout_marginTop="80dp"
         android:ems="10"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toEndOf="@+id/medHead"
@@ -136,6 +141,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="14dp"
         android:text="click to upload image"
+        android:textColor="#000000"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,26 +151,25 @@
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#BF9D9D"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/consult"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/symInp"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintTop_toBottomOf="@+id/symInp" />
 
     <TextView
         android:id="@+id/symHead"
         android:layout_width="71dp"
         android:layout_height="24dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Symtoms"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/medHead" />
 
@@ -172,11 +177,11 @@
         android:id="@+id/symInp"
         android:layout_width="241dp"
         android:layout_height="38dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toEndOf="@+id/symHead"
         app:layout_constraintTop_toBottomOf="@+id/medInp" />
 
