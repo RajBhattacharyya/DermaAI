@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dashbg"
+    android:background="@drawable/dashbgnew"
     tools:context=".DashboardActivity">
 
     <ImageView
@@ -20,18 +20,20 @@
 
     <TextView
         android:id="@+id/imageupHead"
-        android:layout_width="142dp"
-        android:layout_height="71dp"
+        android:layout_width="195dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Scan your skin"
-        android:textColor="#27115C"
+        android:textColor="#F4F3F6"
         android:textSize="24.5sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
         android:id="@+id/ageHead"
@@ -40,7 +42,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Age"
-        android:textColor="#0C0C0C"
+        android:textColor="#E6E2E2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,10 +64,10 @@
         android:id="@+id/sexHead"
         android:layout_width="32dp"
         android:layout_height="22dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Sex"
-        android:textColor="#000000"
+        android:textColor="#F1EAEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +81,7 @@
         android:layout_marginTop="35dp"
         android:ems="10"
         android:inputType="number"
-        android:textColor="#000000"
+        android:textColor="#EFE2E2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toEndOf="@+id/ageHead"
@@ -92,7 +94,7 @@
         android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Duration"
-        android:textColor="#000000"
+        android:textColor="#F4F1F1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.276"
         app:layout_constraintStart_toEndOf="@+id/ageInp"
@@ -105,9 +107,9 @@
         android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Medical History"
-        android:textColor="#000000"
+        android:textColor="#DDD4D4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sexHead" />
 
@@ -127,10 +129,11 @@
         android:id="@+id/medInp"
         android:layout_width="214dp"
         android:layout_height="39dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/medHead"
         app:layout_constraintTop_toBottomOf="@+id/durInp" />
 
@@ -139,7 +142,6 @@
         android:layout_width="165dp"
         android:layout_height="35dp"
         android:layout_marginTop="14dp"
-        android:backgroundTint="#CF8D8D"
         android:text="click to upload image"
         android:textColor="#000000"
         android:textSize="11sp"
@@ -151,11 +153,12 @@
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:background="@color/material_dynamic_neutral_variant80"
-        android:backgroundTint="#AE8E8E"
+        android:backgroundTint="@android:color/system_error_dark"
         android:text="Next"
         android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,11 +167,11 @@
     <TextView
         android:id="@+id/symHead"
         android:layout_width="76dp"
-        android:layout_height="31dp"
+        android:layout_height="32dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Symtoms"
-        android:textColor="#000000"
+        android:textColor="#EFE9E9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
@@ -186,18 +189,4 @@
         app:layout_constraintStart_toEndOf="@+id/symHead"
         app:layout_constraintTop_toBottomOf="@+id/medInp" />
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="182dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="17dp"
-        android:text=" Upload an image and enter all the details for an accurate response "
-        android:textColor="#04000C"
-        android:textSize="11.5sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toEndOf="@+id/imageupHead"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
 </androidx.constraintlayout.widget.ConstraintLayout>
