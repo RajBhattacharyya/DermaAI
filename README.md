@@ -1,10 +1,12 @@
+[![Build and Generate APK](https://github.com/RajBhattacharyya/DermaAI/actions/workflows/main.yml/badge.svg)](https://github.com/RajBhattacharyya/DermaAI/actions/workflows/main.yml)
+
 # Derma.AI 🧪💉🩺
 
 <p align="center">
   <img src="https://github.com/RajBhattacharyya/DermaAI/blob/master/app/src/main/res/drawable/logo.jpg" height="200px" width="200px">
 </p>
 
-Welcome to derma.AI, a revolutionary application designed to assist users in identifying skin diseases using artificial intelligence technology. 
+**Welcome to derma.AI, a revolutionary application designed to assist users in identifying skin diseases using artificial intelligence technology.**
 
 ## Workflow
 
@@ -36,27 +38,23 @@ Gemini, the core AI model powering Derma.AI, is specifically trained for dermato
 
 Overall, Derma.AI combines state-of-the-art technology with user-friendly design to deliver a convenient and effective solution for identifying skin diseases and empowering users to make informed healthcare decisions.
 
-## Features
-
-- **User Authentication**: Secure login and signup functionality using Firebase.
-- **Image Processing**: Take a picture of the affected skin area for disease identification.
-- **AI Diagnosis**: Utilize Gemini AI model to accurately identify skin diseases.
-- **Interactive Questionnaire**: Collect additional information from users such as age, sex, duration, medical history, and symptoms to refine diagnosis.
-- **Personalized Response**: Generate a tailored response based on the collected information and AI analysis.
 
 ## Installation
 
-To run derma.AI locally, follow these steps:
+**Run locally:**
+1. Clone the repository to your local machine.
+2. Open the project in Android Studio.
+3. In local.properties file add GEMINI like this
+   
+   ```bash
+   GEMINI_KEY=YOUR_GEMINI_API
+   ```
+   
+4. Connect your Android device or use an emulator.
+5. Build and run the Farmer's Helper app.
 
-1. Clone the repository:
-
-```
-git clone https://github.com/RajBhattacharyya/DermaAI.git
-```
-
-2. Open the application in Android Studios
-
-3. Run it in an emulator or a device 
+**OR**
+1. You can directly download the App APK from the badge given above.
 
 ## Usage
 
